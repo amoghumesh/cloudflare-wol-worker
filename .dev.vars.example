@@ -1,0 +1,3 @@
+# Local testing only. Generate independent tokens; never use these placeholders.
+USER_TOKEN=replace_with_a_random_user_token_at_least_32_characters
+DEVICE_TOKEN=replace_with_a_different_random_device_token_at_least_32_characters

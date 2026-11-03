@@ -1,0 +1,15 @@
+name = "esp32-wake"
+main = "src/index.js"
+compatibility_date = "2025-10-01"
+workers_dev = true
+
+[[durable_objects.bindings]]
+name = "MAILBOX"
+class_name = "WakeMailbox"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["WakeMailbox"]
+
+# USER_TOKEN and DEVICE_TOKEN must be set using `wrangler secret put`.
+# This first version controls one home ESP32 and one PC per deployment.
